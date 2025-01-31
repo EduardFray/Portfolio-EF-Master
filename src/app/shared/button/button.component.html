@@ -1,0 +1,10 @@
+<button *ngIf="link; else regularButton" 
+        [ngClass]="{'primary': color === 'primary', 'second': color === 'second', 'third': color === 'third', 'ellipsis': textOverflow === 'ellipsis', 'ellipsis-plus': textOverflow === 'ellipsis-plus'}">
+    <a [href]="link" target="_blank">{{label}}</a>  
+</button>
+
+<ng-template #regularButton>
+  <button [ngClass]="{'primary': color === 'primary', 'second': color === 'second', 'third': color === 'third', 'ellipsis': textOverflow === 'ellipsis', 'ellipsis-plus': textOverflow === 'ellipsis-plus'}">
+    {{label}}
+  </button>
+</ng-template>

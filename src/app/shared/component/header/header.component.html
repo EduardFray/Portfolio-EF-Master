@@ -1,0 +1,44 @@
+<div class="content" id="atf">
+    <nav>
+        <div class="responsiveOver1440">
+            <a href="#atf">
+                <h1 class="headline-name">
+                    <span>E</span>
+                    <span class="d-purple">d</span>
+                    <span>u</span>
+                    <span>a</span>
+                    <span>r</span>
+                    <span class="d-color">d</span>
+
+                </h1>
+            </a>
+            <div class="header-links">
+                <a href="#aboutMe">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <div class="flag-container" (click)="switchLanguage()">
+                    <img [src]="flagSrc" alt="flag">
+                    <span>{{currentLang.toUpperCase()}}</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-responsive d-none" (click)="toggleMenu()"></div>
+
+    <div id="resp-menu" class="menu-box" [class.closed-menu]="!isMenuOpen">
+        <div class="menu-links">
+            <div class="closed-btn-container">
+                <img class="closed-button" (click)="toggleMenu()" src="./assets/images/header/close-menu.png"
+                    alt="close-img">
+            </div>
+            <a href="#aboutMe" (click)="toggleMenu()">About me</a>
+            <a href="#skills" (click)="toggleMenu()">My skills</a>
+            <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
+            <a href="#contact" (click)="toggleMenu()">Contact</a>
+        </div>
+
+
+
+    </div>
+</div>

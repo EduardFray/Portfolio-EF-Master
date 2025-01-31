@@ -1,0 +1,75 @@
+button {
+    width: 165px;
+    height: 60px;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+
+
+    &.primary {
+        background-color: rgba(112, 230, 28, 1);
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            background-color: rgba(151, 71, 255, 1);
+        }
+    }
+
+    &.second {
+        background-color: rgba(151, 71, 255, 1);
+        transition: background-color 0.3s ease-in-out;
+        >a {
+            text-decoration: none;
+            color: white;
+        }
+
+        &:hover {
+            background-color: rgba(112, 230, 28, 1);
+            cursor: pointer;
+        }
+    }
+
+    &.third {
+        background-color: transparent;
+        border: 1px solid rgba(112, 230, 28, 1);
+        transition: background-color 0.3s ease-in-out;
+        >a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        &:hover {
+            background-color: rgba(112, 230, 28, 1);
+            cursor: pointer;
+        }
+    }
+
+    &.ellipsis {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 200px;
+
+    }
+
+    &.ellipsis-plus {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 380px) {
+    button {
+        width: 135px;
+        height: 75px;
+    }
+}

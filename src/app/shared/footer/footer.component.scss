@@ -1,0 +1,154 @@
+footer {
+    background-color: rgba(20, 29, 47, 1);
+    color: white;
+    position: relative;
+}
+
+.footer-1440 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 1440px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.top-line-green {
+    border: solid 4px rgba(112, 230, 28, 1);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+   
+}
+
+.headline-name {
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.atf-tag {
+    text-decoration: none;
+    color: white;
+}
+
+.d-purple {
+    color: rgba(151, 71, 255, 1);
+
+}
+
+.d-color {
+    color: rgba(112, 230, 28, 1);
+
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    padding-top: 32px;
+}
+
+.legal-tag {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', Courier, monospace;
+    font-weight: 400;
+    position: relative; // Wichtig für die Positionierung des Pseudo-Elements
+    display: inline-block; // Stellt sicher, dass die ::after-Größe korrekt berechnet wird
+}
+
+.legal-tag::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 50%;
+    height: 1px;
+    background-color: rgba(112, 230, 28, 1);
+    visibility: hidden;
+    transition: visibility 0.3s ease-in-out;
+}
+
+.legal-tag:hover::after {
+    visibility: visible;
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+    >a>img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        transition: transform 0.125s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+        }
+    }
+}
+
+//Media Quary//
+
+@media (max-width: 655px) {
+    .footer-content {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        height: 250px;
+    }
+
+    .headline-name {
+        >span {
+            font-size: 50px;
+        }
+    }
+
+    .name-container {
+        align-items: center;
+    }
+
+    footer {
+        height: 300px;
+    }
+
+    .at-name {
+        font-size: 20px;
+        font-family: 'Poppins', Courier, monospace;
+    }
+
+    .footer-links {
+        gap: 32px;
+
+        >a {
+            >img {
+                height: 35px;
+                width: 35px;
+                object-fit: cover;
+            }
+        }
+    }
+    
+}
