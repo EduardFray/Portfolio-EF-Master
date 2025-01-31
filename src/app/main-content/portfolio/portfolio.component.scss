@@ -1,0 +1,185 @@
+.portfolio-container {
+    background-color: rgba(20, 29, 47);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-head-container {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+}
+
+.portfolio-head-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.sideline-right {
+    bottom: 100px;
+    height: 1px;
+    background-color: rgba(151, 71, 255, 1);
+    border: 3px solid rgba(151, 71, 255, 1);
+    width: 42%;
+}
+
+.sideline-left {
+    height: 1px;
+    background-color: rgba(151, 71, 255, 1);
+    border: 3px solid rgba(151, 71, 255, 1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100px;
+}
+
+.explore-text {
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 10;
+}
+
+.purple-shadow{
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    left: 0px;
+    top: 3700px;
+    z-index: 1;
+}
+
+//Media Quary//
+
+@media (max-width: 2700px) {
+    .sideline-right {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1950px) {
+    .sideline-right {
+        width: 38%;
+    }
+}
+
+@media (max-width: 1700px) {
+    .sideline-right {
+        width: 36%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .sideline-right {
+        width: 34%;
+    }
+}
+
+@media (max-width: 1320px) {
+    .sideline-right {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .purple-shadow {
+        width: 400px;
+        height: 800px;
+        top: 3920px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sideline-right {
+        width: 25%;
+    }
+}
+
+@media (max-width: 850px) {
+    .sideline-right {
+        width: 20%;
+    }
+
+    .purple-shadow {
+        width: 250px;
+    }
+}
+
+@media (max-width: 730px) {
+    
+    .purple-shadow {
+        width: 175px;
+        height: 640px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    .sideline-right {
+        width: 25%;
+    }
+}
+
+@media (max-width: 680px) {
+    .portfolio-head-container {
+        padding-top: 100px;
+    }
+
+    .explore-text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .sideline-left {
+        width: 50px;
+    }
+
+    .sideline-right {
+        width: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio-head-flex {
+        gap: 4px;
+    }
+
+    .sideline-right {
+        width: 25%;
+    }
+}
+
+@media (max-width: 460px) {
+    .sideline-right {
+        width: 20%;
+    }
+
+    .sideline-left {
+        width: 25px;
+    }
+
+    .purple-shadow {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 46px;
+    }
+}

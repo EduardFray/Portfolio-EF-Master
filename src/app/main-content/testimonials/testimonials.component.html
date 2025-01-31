@@ -1,1 +1,34 @@
-<p>testimonials works!</p>
+<div class="testimonials-container">
+    <img class="green-shadow" src="./assets/images/green-shadow-testo.png" alt="green shadow">
+    <div class="testimonial-1440">
+        <div class="border-and-arrows">
+            <img class="speech-mark" src="./assets/images/testimonials/speech-mark.png" alt="speech-mark image">
+            <div class="border">
+                <span [class.fade-out]="isChanging"
+                    [class.fade-in]="!isChanging">{{testimonialsContent[currentIndex].text}}</span>
+                <div class="name-container">
+                    <div class="sideline-inside"></div>
+                    <span [class.fade-out]="isChanging"
+                        [class.fade-in]="!isChanging">{{testimonialsContent[currentIndex].name}}</span>
+                </div>
+            </div>
+            <div class="arrows-container">
+                <div class="arrows-and-dots">
+                    <img class="arrow-left" src="./assets/images/testimonials/arrow_back.png"
+                        (click)="prevTestimonial()" alt="Previous">
+
+                    <img *ngFor="let testimonial of testimonialsContent; let i = index" [src]="i === currentIndex 
+                       ? './assets/images/testimonials/green-dot.png' 
+                       : './assets/images/testimonials/purple-dot.png'" alt="Dot" (click)="setTestimonial(i)">
+
+                    <img class="arrow-right" src="./assets/images/testimonials/arrow_forward.png"
+                        (click)="nextTestimonial()" alt="Next">
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img [src]="testimonialsContent[currentIndex].image" alt="Person Image">
+            <div class="sideline-right"></div>
+        </div>
+    </div>
+</div>

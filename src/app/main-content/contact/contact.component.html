@@ -1,1 +1,50 @@
-<p>contact works!</p>
+<div class="contact-container">
+    <div class="headline-container">
+        <div class="sideline-left"></div>
+        <h1>Contact</h1>
+    </div>
+    <div class="contact-details-container">
+        <div class="contact-1440">
+            <div class="text-container">
+                <h2>Got a problem to solve?</h2>
+                <div class="text-spans">
+                    <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and
+                        contributing to your projects with my work.</span>
+                    <span>Need a Frontend developer? Contact me!</span>
+                </div>
+            </div>
+            <div class="form-container">
+                <form (ngSubmit)="onSubmit(contactForm)" class="form-container" #contactForm="ngForm">
+                    <input #name="ngModel" [(ngModel)]="contactData.name" pattern="[a-zA-ZäöüÄÖÜß\s]+" minlength="2"
+                        name="name" type="text" class="purple-border" placeholder="Your name" required
+                        [disabled]="isFormDisabled">
+                    <input [(ngModel)]="contactData.email" #email="ngModel" name="email" type="email"
+                        class="purple-border" placeholder="Your email" required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" [disabled]="isFormDisabled">
+                    <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message"
+                        class="purple-border" placeholder="Your message" required
+                        [disabled]="isFormDisabled"></textarea>
+                    <div class="policy-container">
+                        <label>
+                            <input type="checkbox" [(ngModel)]="contactData.policy" #policy="ngModel" name="policy"
+                                id="policy" [disabled]="isFormDisabled">
+                            <span class="checkbox-span">
+                                <div class="checkbox-span-first-part">
+                                    <span>I've read the</span>
+                                    <a href="Policy">privacy policy</a>
+                                </div>
+                                <span>and agree to the processing of my data as outlined.</span>
+                            </span>
+                        </label>
+                    </div>
+                    <button [disabled]="!contactForm.valid || !contactData.policy || isFormDisabled" [ngClass]="{
+                        'enabled-button': contactForm.valid && contactData.policy && !isFormDisabled,
+                        'disabled-button': !contactForm.valid || !contactData.policy || isFormDisabled
+                      }" type="submit">
+                        Send message!
+                    </button>
+                </form>
+
+                <div [class.d-none]="!showPopup" class="contact-popUp">
+                    <span>Your message has been successfully sent.</span>
+                </div>

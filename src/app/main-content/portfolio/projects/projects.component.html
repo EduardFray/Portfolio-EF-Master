@@ -1,1 +1,14 @@
-<p>projects works!</p>
+<div class="project-container" [ngClass]="{'reverse-layout': reverseLayout}">
+
+    <img src="{{projectsTest.img}}" alt="join-image">
+
+    <div class="project-text-container">
+        <h2>{{projectsTest.name}}</h2>
+        <span class="code-language">{{projectsTest.language}}</span>
+        <span class="project-description">{{projectsTest.description}}</span>
+        <div class="porject-buttons">
+            <app-button color="second" label="Live test" [link]="projectsTest.livelink"></app-button>
+            <app-button color="third" label="Github" [link]="projectsTest.githubLink"></app-button>
+        </div>
+    </div>
+</div>

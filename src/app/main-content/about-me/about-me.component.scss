@@ -1,0 +1,248 @@
+.about-me-container {
+    background-color: rgba(20, 29, 47, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-me-content {
+    width: 1440px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-text-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    gap: 40px;
+    padding-left: 100px;
+    padding-top: 200px;
+
+    >h1 {
+        margin: 0;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+    }
+
+    >div {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.firstparagraph {
+    z-index: 100;
+}
+
+.bullet-points {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    z-index: 100;
+}
+
+.bullet-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+
+    >img {
+        object-fit: cover;
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.second-portrait-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    >img {
+        width: 460px;
+        height: 460px;
+        border-radius: 50%;
+        border: solid 4px rgba(112, 230, 28, 1);
+        object-fit: cover;
+    }
+}
+
+
+.sideline-green {
+    position: absolute;
+    width: 9995px;
+    height: 1px;
+    border: 3px solid rgba(112, 230, 28, 1);
+    background-color: rgba(112, 230, 28, 1);
+    z-index: 1;
+    right: -10000px;
+}
+
+.purple-shadow {
+    position: absolute;
+    right: 0;
+    top: 810px;
+    height: 650px;
+    width: 250px;
+}
+
+//Media Quary//
+
+@media (max-width: 1600px) {
+    .second-portrait-container{
+        position: relative;
+        right: -100px;
+    }
+
+    .sideline-green {
+        width: 267px;
+        position: static;
+    }
+}
+
+@media (max-width: 1400px) {
+    .sideline-green {
+        width: 100px;
+    }
+
+    .second-portrait-container {
+        position: static;
+    }
+}
+
+@media (max-width: 1200px) {
+    .second-portrait-container {
+        >img {
+            width: 360px;
+            height: 360px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .second-portrait-container {
+        >img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .second-portrait-container {
+        display: none;
+    }
+
+    .purple-shadow {
+        right: 0;
+        top: 1100px;
+        height: 580px;
+        width: 220px;
+    }
+
+    .about-me-content {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .about-me-text-container {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .purple-shadow {
+        height: 430px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 700px) {
+    .purple-shadow {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me-text-container {
+        >h1 {
+            font-size: 70px;
+        }
+    }
+
+    .firstparagraph {
+        >span {
+            font-size: 15px;
+        }
+    }
+
+    .bullet-flex {
+        >span {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .about-me-text-container {
+        width: 400px;
+    }
+}
+
+@media (max-width: 440px) {
+    .about-me-text-container {
+        width: 325px;
+
+        >h1 {
+            font-size: 60px;
+        }
+
+        .firstparagraph {
+            >span {
+                font-size: 14px;
+            }
+        }
+
+        .bullet-flex {
+            >span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .about-me-text-container {
+        gap: 24px;
+    }
+
+    .firstparagraph {
+        >span {
+            font-size: 12px;
+        }
+    }
+
+    .bullet-flex {
+        >span {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .about-me-text-container {
+        width: 310px;
+        >div {
+            font-size: 14px;
+        }
+    }
+}
