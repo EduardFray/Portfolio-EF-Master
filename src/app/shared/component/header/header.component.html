@@ -13,7 +13,7 @@
                 </h1>
             </a>
             <div class="header-links">
-                <a href="#aboutMe">About me</a>
+                <a href="#aboutMe">{{ 'NAV.ABOUT_ME' | translate }}</a>
                 <a href="#skills">Skills</a>
                 <a href="#portfolio">Portfolio</a>
                 <div class="flag-container" (click)="switchLanguage()">
@@ -24,7 +24,15 @@
         </div>
     </nav>
 
-    <div class="menu-responsive d-none" (click)="toggleMenu()"></div>
+    <div class="menu-container d-none">
+       
+        <div class="menu-responsive" (click)="toggleMenu()"></div>
+    
+        <div class="flag-container-mobile" (click)="switchLanguage()">
+            <img [src]="flagSrc" alt="flag">
+            <span>{{ currentLang.toUpperCase() }}</span>
+        </div>
+    </div>
 
     <div id="resp-menu" class="menu-box" [class.closed-menu]="!isMenuOpen">
         <div class="menu-links">
@@ -32,13 +40,10 @@
                 <img class="closed-button" (click)="toggleMenu()" src="./assets/images/header/close-menu.png"
                     alt="close-img">
             </div>
-            <a href="#aboutMe" (click)="toggleMenu()">About me</a>
-            <a href="#skills" (click)="toggleMenu()">My skills</a>
+            <a href="#aboutMe" (click)="toggleMenu()">{{'NAV.ABOUT_ME' | translate}}</a>
+            <a href="#skills" (click)="toggleMenu()">{{'NAV.SKILLS' | translate}}</a>
             <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
-            <a href="#contact" (click)="toggleMenu()">Contact</a>
+            <a href="#contact" (click)="toggleMenu()">{{'NAV.CONTACT' | translate}}</a>
         </div>
-
-
-
     </div>
 </div>

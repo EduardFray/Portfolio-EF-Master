@@ -69,11 +69,35 @@ nav {
     }
 }
 
+.menu-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    top: 0;
+    right: 10px;
+    z-index: 2000;
+}
+
+.flag-container-mobile {
+    color: white;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+
+    >img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 .menu-responsive {
     background-image: url("../../../../assets/images/header/menu.png");
     width: 30px;
     height: 32px;
-    position: fixed;
+    
     right: 25px;
 
     &:hover {
@@ -195,8 +219,7 @@ nav {
     }
 
     .d-none {
-        display: block;
-        z-index: 1000;
+        display: flex;
         margin-top: 30px;
     }
 

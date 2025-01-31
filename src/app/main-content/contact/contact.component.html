@@ -15,19 +15,26 @@
             </div>
             <div class="form-container">
                 <form (ngSubmit)="onSubmit(contactForm)" class="form-container" #contactForm="ngForm">
+                    <!-- Name -->
                     <input #name="ngModel" [(ngModel)]="contactData.name" pattern="[a-zA-ZäöüÄÖÜß\s]+" minlength="2"
-                        name="name" type="text" class="purple-border" placeholder="Your name" required
-                        [disabled]="isFormDisabled">
+                        name="name" type="text" class="purple-border" placeholder="Your name" required [disabled]="isFormDisabled">
+                    <span class="warn-message" *ngIf="name.invalid && name.touched">Your name is required and must only contain letters.</span>
+                
+                    <!-- Email -->
                     <input [(ngModel)]="contactData.email" #email="ngModel" name="email" type="email"
                         class="purple-border" placeholder="Your email" required
                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" [disabled]="isFormDisabled">
+                    <span class="warn-message" *ngIf="email.invalid && email.touched">Please enter a valid email.</span>
+                
+                    <!-- Message -->
                     <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message"
-                        class="purple-border" placeholder="Your message" required
-                        [disabled]="isFormDisabled"></textarea>
+                        class="purple-border" placeholder="Your message" required [disabled]="isFormDisabled"></textarea>
+                    <span class="warn-message" *ngIf="message.invalid && message.touched">Please enter a message (at least 4 characters).</span>
+                
+                    <!-- Privacy Policy -->
                     <div class="policy-container">
                         <label>
-                            <input type="checkbox" [(ngModel)]="contactData.policy" #policy="ngModel" name="policy"
-                                id="policy" [disabled]="isFormDisabled">
+                            <input type="checkbox" [(ngModel)]="contactData.policy" #policy="ngModel" name="policy" id="policy" [disabled]="isFormDisabled">
                             <span class="checkbox-span">
                                 <div class="checkbox-span-first-part">
                                     <span>I've read the</span>
@@ -37,14 +44,23 @@
                             </span>
                         </label>
                     </div>
-                    <button [disabled]="!contactForm.valid || !contactData.policy || isFormDisabled" [ngClass]="{
+                    <span class="warn-message-policy" *ngIf="!contactData.policy && contactForm.submitted">Please accept the privacy policy.</span>
+                
+                    <!-- Submit Button -->
+                    <button [disabled]="!contactForm.valid || !contactData.policy || isFormDisabled"
+                        [ngClass]="{
                         'enabled-button': contactForm.valid && contactData.policy && !isFormDisabled,
                         'disabled-button': !contactForm.valid || !contactData.policy || isFormDisabled
                       }" type="submit">
                         Send message!
                     </button>
                 </form>
+                
 
                 <div [class.d-none]="!showPopup" class="contact-popUp">
                     <span>Your message has been successfully sent.</span>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
