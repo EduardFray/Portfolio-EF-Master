@@ -11,5 +11,124 @@
         "SKILLS": "Skills",
         "PORTFOLIO": "Portfolio",
         "CONTACT": "Contact"
+    },
+    "ATF": {
+        "I_AM": "I am",
+        "NAME": "Eduard Fray",
+        "ROLE": "FRONTEND DEVELOPER",
+        "SCROLL_DOWN": "Scroll down"
+    },
+    "CONTACT": {
+        "TITLE": "Contact",
+        "SUBTITLE": "Got a problem to solve?",
+        "DESCRIPTION_1": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "DESCRIPTION_2": "Need a Frontend developer? Contact me!",
+        "PLACEHOLDER_NAME": "Your name",
+        "PLACEHOLDER_EMAIL": "Your email",
+        "PLACEHOLDER_MESSAGE": "Your message",
+        "ERROR_NAME": "Your name is required and must only contain letters.",
+        "ERROR_EMAIL": "Please enter a valid email.",
+        "ERROR_MESSAGE": "Please enter a message (at least 4 characters).",
+        "POLICY_TEXT": "I've read the",
+        "POLICY_LINK": "privacy policy",
+        "POLICY_AGREE": "and agree to the processing of my data as outlined.",
+        "ERROR_POLICY": "Please accept the privacy policy.",
+        "BUTTON_SEND": "Send message!",
+        "SUCCESS_MESSAGE": "Your message has been successfully sent."
+    },
+    "PORTFOLIO": {
+        "TITLE": "Portfolio",
+        "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    },
+    "PROJECTS": {
+        "JOIN": {
+            "NAME": "Join",
+            "LANGUAGE": "JavaScript | HTML | CSS | Firebase",
+            "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+        },
+        "POLLO_LOCO": {
+            "NAME": "El Pollo Loco",
+            "LANGUAGE": "JavaScript | HTML | CSS",
+            "DESCRIPTION": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe' to find coins and poison bottles to fight against the killer chicken."
+        },
+        "POKEDEX": {
+            "NAME": "Pokedex",
+            "LANGUAGE": "JavaScript | HTML | CSS | API",
+            "DESCRIPTION": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information."
+        }
+    },
+    "SKILLS": {
+        "TITLE": "My skills",
+        "DESCRIPTION": "I have gained experience in building projects with different frontend technologies and concepts.",
+        "LOOKING_FOR": "Looking for another skill?",
+        "CONTACT_ME": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+        "BUTTON": "Get in touch",
+        "LEARNING": "Continually learning"
+    },
+    "TESTIMONIALS": {
+        "FIRST": {
+            "TEXT": "Eduard was always dependable and kept the team on track. His ability to focus on the bigger picture while still handling the details helped us make steady progress. He also brought a great sense of humor to the group, which made working together much more enjoyable.",
+            "NAME": "J. Lohmann - Team Partner"
+        },
+        "SECOND": {
+            "TEXT": "Eduard made teamwork easy. He communicated clearly, stayed reliable throughout, and always had a positive attitude.",
+            "NAME": "T. Becker - Team Partner"
+        },
+        "THIRD": {
+            "TEXT": "Working with Eduard was a genuinely good experience. He kept everyone motivated and made sure we stayed on course without losing sight of the team’s dynamic. His approachable nature made him a great teammate.",
+            "NAME": "N. Gruber"
+        }
+    },
+    "FOOTER": {
+        "LEGAL_NOTICE": "Legal Notice"
+    },
+    "LEGAL_NOTICE": {
+        "TITLE": "Legal Notice",
+        "OPERATOR": "Name of the operator",
+        "ADDRESS": "Address",
+        "EMAIL": "Email address",
+        "PHONE": "Phone number",
+        "REPRESENTATIVE": "Representative person",
+        "REPRESENTATIVE_TEXT": "No representative person (individual portfolio website)",
+        "COMPANY_REG": "Company registration",
+        "COMPANY_REG_TEXT": "Not applicable (personal website)",
+        "VAT": "VAT ID",
+        "VAT_TEXT": "Not required (personal website, no sales involved)",
+        "IMAGES": "Images",
+        "IMAGE_DESC": "Some images used on this website are sourced from",
+        "IMAGE_ATTRIBUTION": "and are free to use under the Pixabay License. No attribution is required, but we provide credit as a courtesy where possible. For more information, please visit the",
+        "LICENSE_PAGE": "Pixabay License Page",
+        "ICON_DESC": "Some icons used on this website are sourced from",
+        "ICON_ATTRIBUTION": "and are free to use under the Flaticon License. Attribution may be required depending on the specific icon's license. For more information, please visit the",
+        "FLATICON_LICENSE": "Flaticon License Page"
+    },
+    "PRIVACY_POLICY": {
+        "TITLE": "Privacy Policy",
+        "GENERAL_TITLE": "General",
+        "GENERAL_DESC": "This privacy policy informs you about the type, scope, and purpose of the processing of personal data within our online offer. This privacy policy applies from 01.01.2025.",
+        "RESPONSIBLE": "Responsible",
+        "CONTACT_OPTIONS": "Contact Options",
+        "EMAIL": "Email Address",
+        "TYPES_PROCESSED_DATA": "Types of Processed Data:",
+        "DATA_CONTACT": "Contact data (e.g., email, telephone numbers).",
+        "AFFECTED_PERSONS": "Categories of Affected Persons",
+        "AFFECTED_PERSONS_DESC": "Visitors and users of the online offer (Hereinafter, we refer to the affected persons collectively as 'users').",
+        "PURPOSE_PROCESSING": "Purpose of Processing",
+        "PURPOSE_PROVIDE": "Provision of the online offer, its contents, and functions.",
+        "PURPOSE_CONTACT": "Answering contact inquiries and communication with users.",
+        "CONTACTING": "Contacting Us",
+        "CONTACTING_DESC": "When contacting us via email, your details will be processed for the purpose of handling the contact request. We do not share this information without your consent.",
+        "YOUR_RIGHTS": "Your Rights",
+        "YOUR_RIGHTS_DESC": "You can exercise the following rights at any time using the contact details provided:",
+        "RIGHTS_INFO": "Information about your data stored by us and their processing.",
+        "RIGHTS_CORRECTION": "Correction of incorrect personal data.",
+        "RIGHTS_DELETION": "Deletion of your data stored by us.",
+        "RIGHTS_RESTRICTION": "Restriction of data processing if we are not yet allowed to delete your data due to legal obligations.",
+        "RIGHTS_OBJECTION": "Objection to the processing of your data by us.",
+        "RIGHTS_PORTABILITY": "Data portability if you have consented to the data processing or have concluded a contract with us.",
+        "RIGHTS_WITHDRAWAL": "If you have given us consent, you can withdraw this at any time with effect for the future.",
+        "RIGHTS_COMPLAINT": "You can always file a complaint with the supervisory authority.",
+        "CHANGES": "Changes to Our Privacy Policy",
+        "CHANGES_DESC": "We reserve the right to adapt this privacy policy to ensure it complies with current legal requirements or to implement changes to our services."
     }
 }

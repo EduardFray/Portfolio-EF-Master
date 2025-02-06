@@ -248,7 +248,7 @@
 
 @media (max-width: 1250px) {
     .iam-span {
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
 
     .intro-container {
@@ -269,6 +269,13 @@
 }
 
 @media (max-width: 1150px) {
+    .healdine-description {
+        font-size: 27px !important;
+    }
+
+    .iam-span {
+        font-size: 28px !important;
+    }
 
     .me-image-first {
         width: 540px;
@@ -286,7 +293,7 @@
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1105px) {
     .headline-name {
         font-size: 40px !important;
         line-height: 20px !important;
@@ -294,7 +301,7 @@
     }
 
     .healdine-description {
-        font-size: 25px !important;
+        font-size: 24px !important;
     }
 
     .iam-span {
@@ -305,13 +312,39 @@
 
 }
 
-@media (max-width: 1033px) {
+@media (max-width: 1080px) {
+
+    .healdine-description {
+        font-size: 23px !important;
+    }
+
+    .iam-span {
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 1050px) {
+
+
+    .iam-span {
+        font-size: 22px !important;
+    }
+}
+
+@media (max-width: 1040px) {
     .headline-name {
         font-size: 35px !important;
     }
 
     .healdine-description {
         font-size: 20px !important;
+    }
+}
+
+@media (max-width: 1005px) {
+
+    .healdine-description {
+        font-size: 18px !important;
     }
 }
 
@@ -492,6 +525,12 @@
     }
 }
 
+@media (max-width: 565px) {
+    .iam-span {
+        font-size: 25px !important;
+    }
+}
+
 @media (max-width: 540px) {
     .find-me-leftside {
         width: 340px;
@@ -500,7 +539,16 @@
     .me-image-first {
         width: 480px;
     }
+}
 
+@media (max-width: 530px) {
+    .healdine-description {
+        font-size: 25px !important;
+    }
+
+    .headline-name {
+        font-size: 50px !important;
+    }
 }
 
 
@@ -514,9 +562,9 @@
     }
 
     .iam-span {
-        font-size: 30px !important;
         height: 5px !important;
-        width: 80px
+        font-size: 20px !important;
+        width: 80px;
     }
 
     .healdine-description {
@@ -545,7 +593,6 @@
     }
 
     .iam-span {
-        font-size: 27px !important;
         height: 0px !important;
         width: 72px;
     }
@@ -574,6 +621,11 @@
     .find-me-leftside {
         width: 260px;
     }
+
+    .healdine-description {
+        font-size: 20px !important;
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 410px) {
@@ -586,7 +638,7 @@
     }
 
     .healdine-description {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 }
 
@@ -613,18 +665,19 @@
 @media (max-width: 363px) {
 
     .headline-name {
-        font-size: 27px !important;
+        font-size: 30px !important;
     }
 
     .healdine-description {
-        font-size: 16px !important;
+        font-size: 20px !important;
         line-height: 30px !important;
     }
 
     .iam-span {
-        font-size: 20px !important;
+        font-size: 18px !important;
         height: 0px !important;
-        width: 68px;
+        width: 80px;
+        white-space: nowrap;
     }
 
     .atf-button {
@@ -641,9 +694,7 @@
     .iam-span {
         display: flex;
         align-items: start;
-        line-height: 60px !important;
-        font-size: 22px !important;
-        width: 73px;
+        line-height: 40px !important;
     }
 
     .healdine-description {

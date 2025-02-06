@@ -1,47 +1,50 @@
 <div class="legal-notice-container">
     <div class="legal-notice-1440">
-
         <div class="headline-button-container">
-            <h1>Legal Notice</h1>
-            <a href=""><img class="rotate-left" [src]="currentImage" alt="Arrow" (mouseover)="changeToGreenArrow()"
-                    (mouseout)="changeToWhiteArrow()"></a>
+            <h1>{{ 'LEGAL_NOTICE.TITLE' | translate }}</h1>
+            <a href="">
+                <img class="rotate-left" [src]="currentImage" alt="Arrow" (mouseover)="changeToGreenArrow()"
+                    (mouseout)="changeToWhiteArrow()">
+            </a>
         </div>
 
+        <p><strong>{{ 'LEGAL_NOTICE.OPERATOR' | translate }}:</strong><br> Eduard Fray</p>
 
-        <p><strong>Name of the operator:</strong><br>
-            Eduard Fray</p>
+        <p><strong>{{ 'LEGAL_NOTICE.ADDRESS' | translate }}:</strong><br> Vitalisstr. 385, 50933 Köln, Germany</p>
 
-        <p><strong>Address:</strong><br>
-            Vitalisstr. 385, 50933 Köln, Germany</p>
+        <p><strong>{{ 'LEGAL_NOTICE.EMAIL' | translate }}:</strong><br>
+            <a class="mail-color" href="mailto:eduard.fray.developer@gmail.com">
+                eduard.fray.developer&commat;gmail.com
+            </a>
+        </p>
 
-        <p><strong>Email address:</strong><br>
+        <p><strong>{{ 'LEGAL_NOTICE.PHONE' | translate }}:</strong><br> 0162 6529429</p>
+
+        <p><strong>{{ 'LEGAL_NOTICE.REPRESENTATIVE' | translate }}:</strong><br>
+            {{ 'LEGAL_NOTICE.REPRESENTATIVE_TEXT' | translate }}
+        </p>
+
+        <p><strong>{{ 'LEGAL_NOTICE.COMPANY_REG' | translate }}:</strong><br>
+            {{ 'LEGAL_NOTICE.COMPANY_REG_TEXT' | translate }}
+        </p>
+
+        <p><strong>{{ 'LEGAL_NOTICE.VAT' | translate }}:</strong><br>
+            {{ 'LEGAL_NOTICE.VAT_TEXT' | translate }}
+        </p>
+
+        <p><strong>{{ 'LEGAL_NOTICE.IMAGES' | translate }}:</strong><br>
+            {{ 'LEGAL_NOTICE.IMAGE_DESC' | translate }}
+            <a class="mail-color" href="https://pixabay.com" target="_blank">Pixabay</a>.
+            {{ 'LEGAL_NOTICE.IMAGE_ATTRIBUTION' | translate }}
+            <a class="mail-color" href="https://pixabay.com/service/license/" target="_blank">
+                {{ 'LEGAL_NOTICE.LICENSE_PAGE' | translate }}
+            </a>.
+            {{ 'LEGAL_NOTICE.ICON_DESC' | translate }}
+            <a class="mail-color" href="https://www.flaticon.com" target="_blank">Flaticon</a>.
+            {{ 'LEGAL_NOTICE.ICON_ATTRIBUTION' | translate }}
             <a class="mail-color"
-                href="mailto:eduard.fray.developer@gmail.com">eduard.fray.developer&commat;gmail.com</a>
-        </p>
-
-        <p><strong>Phone number:</strong><br>
-            0162 6529429</p>
-
-        <p><strong>Representative person:</strong><br>
-            No representative person (individual portfolio website)</p>
-
-        <p><strong>Company registration:</strong><br>
-            Not applicable (personal website)</p>
-
-        <p><strong>VAT ID:</strong><br>
-            Not required (personal website, no sales involved)</p>
-
-        <p><strong>Images:</strong><br>
-            Some images used on this website are sourced from <a class="mail-color" href="https://pixabay.com"
-                target="_blank">Pixabay</a> and are free to use under the Pixabay License. No attribution is required,
-            but we provide credit as a courtesy where possible. For more information, please visit the <a
-                class="mail-color" href="https://pixabay.com/service/license/" target="_blank">Pixabay License Page</a>.
-            Some icons used on this website are sourced from <a class="mail-color" href="https://www.flaticon.com"
-                target="_blank">Flaticon</a> and are free to use under the Flaticon License. Attribution may be required
-            depending on the specific icon's license. For more information, please visit the <a class="mail-color"
                 href="https://support.flaticon.com/s/topic/0TO3V000000CmIxWAK/licenses?language=en_US&_ga=2.180216685.854313613.1736188051-1577972394.1719258283&_gl=1*o9aqz7*test_ga*MTU3Nzk3MjM5NC4xNzE5MjU4Mjgz*test_ga_523JXC6VL7*MTczNjE4ODA1MS42LjEuMTczNjE4ODc4OS42MC4wLjA.*fp_ga*MTU3Nzk3MjM5NC4xNzE5MjU4Mjgz*fp_ga_1ZY8468CQB*MTczNjE4ODA1MS42LjEuMTczNjE4ODc4OS42MC4wLjA."
-                target="_blank">Flaticon License Page</a>.
+                target="_blank">
+                {{ 'LEGAL_NOTICE.FLATICON_LICENSE' | translate }}
+            </a>.
         </p>
-
-    </div>
-</div>

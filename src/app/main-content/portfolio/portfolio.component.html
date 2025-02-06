@@ -1,19 +1,17 @@
 <div class="portfolio-container">
-
     <div class="portfolio-head-container">
         <div class="portfolio-head-flex">
             <div class="sideline-left"></div>
-            <h1>Portfolio</h1>
+            <h1>{{ 'PORTFOLIO.TITLE' | translate }}</h1>
             <div class="sideline-right"></div>
         </div>
-        <div class="explore-text">Explore a selection of my work here - Interact with projects to see my skills in
-            action
+        <div class="explore-text">
+            {{ 'PORTFOLIO.DESCRIPTION' | translate }}
         </div>
     </div>
 
-
     @for (project of projects; track project; let i = $index) {
-    <app-projects [projectsTest]="project" [reverseLayout]=" i % 2 === 1 "></app-projects>
+        <app-projects [projectsTest]="project" [reverseLayout]=" i % 2 === 1 "></app-projects>
     }
 
     <img class="purple-shadow" src="./assets/images/purple-shadow-portfolio.png" alt="">

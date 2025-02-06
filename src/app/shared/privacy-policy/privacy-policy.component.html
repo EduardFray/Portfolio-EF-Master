@@ -1,65 +1,61 @@
 <div class="privacy-policy-container">
-
     <div class="policy-1440">
-
         <div class="headline-button-container">
-            <h1>Privacy Policy</h1>
-            <a href=""><img class="rotate-left" [src]="currentImage" (mouseover)="changeToGreenArrow()"
-                    (mouseout)="changeToWhiteArrow()" alt="Arrow"></a>
+            <h1>{{ 'PRIVACY_POLICY.TITLE' | translate }}</h1>
+            <a href="">
+                <img class="rotate-left" [src]="currentImage" alt="Arrow"
+                    (mouseover)="changeToGreenArrow()"
+                    (mouseout)="changeToWhiteArrow()">
+            </a>
         </div>
 
+        <h2>{{ 'PRIVACY_POLICY.GENERAL_TITLE' | translate }}</h2>
+        <p>{{ 'PRIVACY_POLICY.GENERAL_DESC' | translate }}</p>
 
-        <h2>General</h2>
-        <p>This privacy policy informs you about the type, scope, and purpose of the processing of personal data within
-            our online offer. This privacy policy applies from 01.01.2025.</p>
-
-        <h2>Responsible</h2>
+        <h2>{{ 'PRIVACY_POLICY.RESPONSIBLE' | translate }}</h2>
         <p>Eduard Fray<br>
             Vitalisstr. 385,<br>
             50933 Cologne,<br>
             Germany</p>
 
-        <h2>Contact Options</h2>
-        <p>Email Address: <a class="mail-color"
-                href="mailto:eduard.fray.developer@gmail.com">eduard.fray.developer&#64;gmail.com</a></p>
+        <h2>{{ 'PRIVACY_POLICY.CONTACT_OPTIONS' | translate }}</h2>
+        <p>{{ 'PRIVACY_POLICY.EMAIL' | translate }}: 
+            <a class="mail-color" href="mailto:eduard.fray.developer@gmail.com">
+                eduard.fray.developer&commat;gmail.com
+            </a>
+        </p>
 
-        <h2>Types of Processed Data:</h2>
+        <h2>{{ 'PRIVACY_POLICY.TYPES_PROCESSED_DATA' | translate }}</h2>
         <ul>
-            <li>Contact data (e.g., email, telephone numbers).</li>
+            <li>{{ 'PRIVACY_POLICY.DATA_CONTACT' | translate }}</li>
         </ul>
 
-        <h2>Categories of Affected Persons</h2>
-        <p>Visitors and users of the online offer (Hereinafter, we refer to the affected persons collectively as
-            "users").</p>
+        <h2>{{ 'PRIVACY_POLICY.AFFECTED_PERSONS' | translate }}</h2>
+        <p>{{ 'PRIVACY_POLICY.AFFECTED_PERSONS_DESC' | translate }}</p>
 
-        <h2>Purpose of Processing</h2>
+        <h2>{{ 'PRIVACY_POLICY.PURPOSE_PROCESSING' | translate }}</h2>
         <ul>
-            <li>Provision of the online offer, its contents, and functions.</li>
-            <li>Answering contact inquiries and communication with users.</li>
+            <li>{{ 'PRIVACY_POLICY.PURPOSE_PROVIDE' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.PURPOSE_CONTACT' | translate }}</li>
         </ul>
 
-        <h2>Contacting Us</h2>
-        <p>When contacting us via email, your details will be processed for the purpose of handling the contact request.
-            We do not share this information without your consent.</p>
+        <h2>{{ 'PRIVACY_POLICY.CONTACTING' | translate }}</h2>
+        <p>{{ 'PRIVACY_POLICY.CONTACTING_DESC' | translate }}</p>
 
-        <h2>Your Rights</h2>
-        <p>You can exercise the following rights at any time using the contact details provided:</p>
+        <h2>{{ 'PRIVACY_POLICY.YOUR_RIGHTS' | translate }}</h2>
+        <p>{{ 'PRIVACY_POLICY.YOUR_RIGHTS_DESC' | translate }}</p>
         <ul>
-            <li>Information about your data stored by us and their processing,</li>
-            <li>Correction of incorrect personal data,</li>
-            <li>Deletion of your data stored by us,</li>
-            <li>Restriction of data processing if we are not yet allowed to delete your data due to legal obligations,
-            </li>
-            <li>Objection to the processing of your data by us, and</li>
-            <li>Data portability if you have consented to the data processing or have concluded a contract with us.</li>
+            <li>{{ 'PRIVACY_POLICY.RIGHTS_INFO' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.RIGHTS_CORRECTION' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.RIGHTS_DELETION' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.RIGHTS_RESTRICTION' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.RIGHTS_OBJECTION' | translate }}</li>
+            <li>{{ 'PRIVACY_POLICY.RIGHTS_PORTABILITY' | translate }}</li>
         </ul>
-        <p>If you have given us consent, you can withdraw this at any time with effect for the future.</p>
-        <p>You can always file a complaint with the supervisory authority, e.g., the competent supervisory authority of
-            the federal state of your residence or the authority that supervises us as responsible for you.</p>
+        <p>{{ 'PRIVACY_POLICY.RIGHTS_WITHDRAWAL' | translate }}</p>
+        <p>{{ 'PRIVACY_POLICY.RIGHTS_COMPLAINT' | translate }}</p>
 
-        <h2>Changes to Our Privacy Policy</h2>
-        <p>We reserve the right to adapt this privacy policy to ensure it complies with current legal requirements or to
-            implement changes to our services in the privacy policy, e.g., when introducing new services. Your new visit
-            will be subject to the new privacy policy.</p>
+        <h2>{{ 'PRIVACY_POLICY.CHANGES' | translate }}</h2>
+        <p>{{ 'PRIVACY_POLICY.CHANGES_DESC' | translate }}</p>
     </div>
 </div>

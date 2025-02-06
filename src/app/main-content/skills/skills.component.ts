@@ -2,15 +2,18 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { RouterModule } from '@angular/router';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule, ButtonComponent, RouterModule],
+  imports: [CommonModule, ButtonComponent, RouterModule, TranslatePipe],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+
+  
 
   skills = [
     {
@@ -60,6 +63,21 @@ export class SkillsComponent {
     }
   ];
 
-  hovered: boolean = false;
+  constructor(private translate: TranslateService) {
+    this.updateSkillName();
+    this.translate.onLangChange.subscribe(() => {
+      this.updateSkillName();
+    });
+  }
 
+  updateSkillName() {
+    // Aktualisiert nur den Namen von "Continually learning"
+    this.skills[this.skills.length - 1].name = this.translate.instant('SKILLS.LEARNING');
+  }
+
+  hovered: boolean = false;
 }
+
+  
+
+

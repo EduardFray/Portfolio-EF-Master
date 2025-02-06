@@ -13,28 +13,26 @@
         </div>
         <div class="skill-right">
             <div class="skill-right-headline">
-                <h1>My skills</h1>
+                <h1>{{ 'SKILLS.TITLE' | translate }}</h1>
                 <div class="sideline"></div>
             </div>
             <div class="looking-for-skill-container">
-                <span>I have gained experience in building project with different frontend tochnologies and
-                    concepts.</span>
+                <span>{{ 'SKILLS.DESCRIPTION' | translate }}</span>
                 <div class="skill-left d-none">
                     <div *ngFor="let skill of skills; let i = index" class="skill-name-container">
                         <img [src]="(i === skills.length - 1 && skill.hovered) ? './assets/images/skills/learning-white.png' : skill.img"
                             (mouseenter)="i === skills.length - 1 ? skill.hovered = true : null"
                             (mouseleave)="i === skills.length - 1 ? skill.hovered = false : null" alt="">
-                        <span class="skill-name" [ngClass]="{'last-skill': i === skills.length - 1}">{{ skill.name
-                            }}</span>
+                        <span class="skill-name" [ngClass]="{'last-skill': i === skills.length - 1}">{{ skill.name }}</span>
                         <div *ngIf="skill.hovered && i === skills.length - 1" class="popup-image">
                             <img src="./assets/images/skills/learning-popup.png" alt="Popup Image">
                         </div>
                     </div>
                 </div>
-                <h2>Looking for <span class="highlight">another skill?</span></h2>
-                <span>Feel free to contact me. I look forward to expanding on my previous knowledge.</span>
+                <h2>{{ 'SKILLS.LOOKING_FOR' | translate }}</h2>
+                <span>{{ 'SKILLS.CONTACT_ME' | translate }}</span>
                 <a href="#contact">
-                    <app-button label="Get in touch" textOverflow="ellipsis"></app-button>
+                    <app-button label="{{ 'SKILLS.BUTTON' | translate }}" textOverflow="ellipsis"></app-button>
                 </a>
             </div>
         </div>

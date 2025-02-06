@@ -11,5 +11,120 @@
         "SKILLS": "Fähigkeiten",
         "PORTFOLIO": "Portfolio",
         "CONTACT": "Kontakt"
+    },
+    "ATF": {
+        "I_AM": "Ich bin",
+        "NAME": "Eduard Fray",
+        "ROLE": "FRONTEND-ENTWICKLER",
+        "SCROLL_DOWN": "Nach unten scrollen"
+    },
+    "CONTACT": {
+        "TITLE": "Kontakt",
+        "SUBTITLE": "Hast du ein Problem zu lösen?",
+        "DESCRIPTION_1": "Kontaktiere mich über dieses Formular. Ich bin daran interessiert, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.",
+        "DESCRIPTION_2": "Brauchst du einen Frontend-Entwickler? Kontaktiere mich!",
+        "PLACEHOLDER_NAME": "Dein Name",
+        "PLACEHOLDER_EMAIL": "Deine E-Mail",
+        "PLACEHOLDER_MESSAGE": "Deine Nachricht",
+        "ERROR_NAME": "Dein Name ist erforderlich und darf nur Buchstaben enthalten.",
+        "ERROR_EMAIL": "Bitte gib eine gültige E-Mail-Adresse ein.",
+        "ERROR_MESSAGE": "Bitte gib eine Nachricht ein (mindestens 4 Zeichen).",
+        "POLICY_TEXT": "Ich habe die",
+        "POLICY_LINK": "Datenschutzerklärung",
+        "POLICY_AGREE": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "ERROR_POLICY": "Bitte akzeptiere die Datenschutzerklärung.",
+        "BUTTON_SEND": "Nachricht senden!",
+        "SUCCESS_MESSAGE": "Deine Nachricht wurde erfolgreich gesendet."
+    },
+    "PORTFOLIO": {
+        "TITLE": "Portfolio",
+        "DESCRIPTION": "Entdecke eine Auswahl meiner Arbeiten – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    },
+    "PROJECTS": {
+        "JOIN": {
+            "NAME": "Join",
+            "LANGUAGE": "JavaScript | HTML | CSS | Firebase",
+            "DESCRIPTION": "Ein Taskmanager inspiriert vom Kanban-System. Erstelle und organisiere deine Aufgaben mit Drag-and-Drop-Funktionen. Weise Benutzer und Kategorien zu."
+        },
+        "POLLO_LOCO": {
+            "NAME": "El Pollo Loco",
+            "LANGUAGE": "JavaScript | HTML | CSS",
+            "DESCRIPTION": "Ein einfaches Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe', Münzen und Giftflaschen zu finden, um gegen das Killer-Chicken zu kämpfen."
+        },
+        "POKEDEX": {
+            "NAME": "Pokedex",
+            "LANGUAGE": "JavaScript | HTML | CSS | API",
+            "DESCRIPTION": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+        }
+    },
+    "SKILLS": {
+        "TITLE": "Meine Skills",
+        "DESCRIPTION": "Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+        "LOOKING_FOR": "Suchst du eine andere Fähigkeit?",
+        "CONTACT_ME": "Kontaktiere mich gerne. Ich freue mich darauf, mein Wissen zu erweitern.",
+        "BUTTON": "Kontakt",
+        "LEARNING": "Ständiges Lernen"
+    },
+    "TESTIMONIALS": {
+        "FIRST": {
+            "TEXT": "Eduard war immer zuverlässig und hielt das Team auf Kurs. Seine Fähigkeit, das große Ganze im Blick zu behalten und gleichzeitig auf Details zu achten, half uns, stetige Fortschritte zu machen. Außerdem brachte er eine großartige Portion Humor ins Team, was die Zusammenarbeit noch angenehmer machte.",
+            "NAME": "J. Lohmann - Teamkollege"
+        },
+        "SECOND": {
+            "TEXT": "Eduard machte Teamarbeit einfach. Er kommunizierte klar, war stets zuverlässig und hatte immer eine positive Einstellung.",
+            "NAME": "T. Becker - Teamkollege"
+        },
+        "THIRD": {
+            "TEXT": "Die Zusammenarbeit mit Eduard war eine durchweg positive Erfahrung. Er motivierte das Team und stellte sicher, dass wir den Kurs hielten, ohne dabei das Teamgefühl zu verlieren. Seine offene Art machte ihn zu einem tollen Kollegen.",
+            "NAME": "N. Gruber"
+        }
+    },
+    "FOOTER": {
+        "LEGAL_NOTICE": "Impressum"
+    },
+    "LEGAL_NOTICE": {
+        "TITLE": "Impressum",
+        "OPERATOR": "Name des Betreibers",
+        "ADDRESS": "Adresse",
+        "EMAIL": "E-Mail-Adresse",
+        "PHONE": "Telefonnummer",
+        "REPRESENTATIVE": "Vertretungsberechtigte Person",
+        "REPRESENTATIVE_TEXT": "Keine vertretungsberechtigte Person (individuelle Portfolio-Website)",
+        "COMPANY_REG": "Handelsregister",
+        "COMPANY_REG_TEXT": "Nicht anwendbar (persönliche Website)",
+        "VAT": "Umsatzsteuer-ID",
+        "VAT_TEXT": "Nicht erforderlich (persönliche Website, kein Verkauf)",
+        "IMAGES": "Bilder",
+        "IMAGE_DESC": "Einige auf dieser Website verwendete Bilder stammen von",
+        "IMAGE_ATTRIBUTION": "und sind unter der Pixabay-Lizenz frei nutzbar. Eine Namensnennung ist nicht erforderlich, jedoch geben wir sie als Höflichkeit an, wenn möglich. Weitere Informationen finden Sie auf der",
+        "LICENSE_PAGE": "Pixabay-Lizenzseite",
+        "ICON_DESC": "Einige auf dieser Website verwendete Icons stammen von",
+        "ICON_ATTRIBUTION": "und sind unter der Flaticon-Lizenz frei nutzbar. Eine Namensnennung kann je nach Lizenz des spezifischen Icons erforderlich sein. Weitere Informationen finden Sie auf der",
+        "FLATICON_LICENSE": "Flaticon-Lizenzseite"
+    },
+    "PRIVACY_POLICY": {
+        "TITLE": "Datenschutzerklärung",
+        "GENERAL_TITLE": "Allgemeines",
+        "GENERAL_DESC": "Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der Verarbeitung personenbezogener Daten innerhalb unseres Online-Angebots. Diese Datenschutzerklärung gilt ab dem 01.01.2025.",
+        "RESPONSIBLE": "Verantwortlicher",
+        "CONTACT_OPTIONS": "Kontaktmöglichkeiten",
+        "EMAIL": "E-Mail-Adresse",
+        "TYPES_PROCESSED_DATA": "Arten der verarbeiteten Daten:",
+        "DATA_CONTACT": "Kontaktdaten (z. B. E-Mail, Telefonnummern).",
+        "AFFECTED_PERSONS": "Kategorien betroffener Personen",
+        "AFFECTED_PERSONS_DESC": "Besucher und Nutzer des Online-Angebots (Im Folgenden bezeichnen wir die betroffenen Personen zusammenfassend als 'Nutzer').",
+        "PURPOSE_PROCESSING": "Zweck der Verarbeitung",
+        "PURPOSE_PROVIDE": "Bereitstellung des Online-Angebots, seiner Inhalte und Funktionen.",
+        "PURPOSE_CONTACT": "Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern.",
+        "CONTACTING": "Kontaktaufnahme",
+        "CONTACTING_DESC": "Bei einer Kontaktaufnahme per E-Mail werden Ihre Angaben zur Bearbeitung der Kontaktanfrage verarbeitet. Diese Informationen werden nicht ohne Ihre Einwilligung weitergegeben.",
+        "YOUR_RIGHTS": "Ihre Rechte",
+        "YOUR_RIGHTS_DESC": "Sie können jederzeit folgende Rechte ausüben:",
+        "RIGHTS_INFO": "Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung.",
+        "RIGHTS_CORRECTION": "Berichtigung unrichtiger personenbezogener Daten.",
+        "RIGHTS_DELETION": "Löschung Ihrer bei uns gespeicherten Daten.",
+        "RIGHTS_COMPLAINT": "Sie können jederzeit eine Beschwerde bei der Aufsichtsbehörde einreichen.",
+        "CHANGES": "Änderungen unserer Datenschutzerklärung",
+        "CHANGES_DESC": "Wir behalten uns das Recht vor, diese Datenschutzerklärung anzupassen."
     }
 }

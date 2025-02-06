@@ -1,22 +1,18 @@
 <div class="above-the-fold">
-
     <div class="image-name-elip-container">
-
         <div class="me-image-container">
-
             <div class="shadow-green-purple">
                 <img src="./assets/images/photo-shadows.png" alt="green-purple-shadow image">
             </div>
-
             <img class="me-image-first" src="./assets/images/profile-picture1.png" alt="profile image">
         </div>
 
         <div class="intro-container">
             <div class="intro-box">
-                <span class="iam-span">I am</span>
+                <span class="iam-span">{{ 'ATF.I_AM' | translate }}</span>
                 <div class="iam-description">
-                    <span class="headline-name">Eduard Fray</span>
-                    <span class="healdine-description">FRONTEND DEVELOPER</span>
+                    <span class="headline-name">{{ 'ATF.NAME' | translate }}</span>
+                    <span class="healdine-description">{{ 'ATF.ROLE' | translate }}</span>
                 </div>
             </div>
 
@@ -30,10 +26,10 @@
 
     <div class="intro-container d-none">
         <div class="intro-box">
-            <span class="iam-span">I am</span>
+            <span class="iam-span">{{ 'ATF.I_AM' | translate }}</span>
             <div class="iam-description">
-                <span class="headline-name">Eduard Fray</span>
-                <span class="healdine-description">FRONTEND DEVELOPER</span>
+                <span class="headline-name">{{ 'ATF.NAME' | translate }}</span>
+                <span class="healdine-description">{{ 'ATF.ROLE' | translate }}</span>
             </div>
         </div>
 
@@ -44,22 +40,26 @@
         </div>
     </div>
 
-<div class="find-me-center">
-    <div class="find-me-links-container">
-        <div class="find-me-leftside">
-            <div class="sideline"></div>
-            <a href="https://github.com/EduardFray" target="_blank"><img src="./assets/images/github.png"
-                    alt="github Image"></a>
-            <a href="#contact"><img src="./assets/images/mail.png" alt="mail icon"></a>
-            <a href="https://www.linkedin.com/in/eduard-fray-696ba81a9" target="_blank"><img
-                    src="./assets/images/linkdin.png" alt="linkedin icon"></a>
-            <span>eduard.fray.developer&#64;gmail.com</span>
-        </div>
+    <div class="find-me-center">
+        <div class="find-me-links-container">
+            <div class="find-me-leftside">
+                <div class="sideline"></div>
+                <a href="https://github.com/EduardFray" target="_blank">
+                    <img src="./assets/images/github.png" alt="github Image">
+                </a>
+                <a href="#contact">
+                    <img src="./assets/images/mail.png" alt="mail icon">
+                </a>
+                <a href="https://www.linkedin.com/in/eduard-fray-696ba81a9" target="_blank">
+                    <img src="./assets/images/linkdin.png" alt="linkedin icon">
+                </a>
+                <span>eduard.fray.developer&#64;gmail.com</span>
+            </div>
 
-        <div class="find-me-rightside">
-            <span>Scroll down</span>
-            <img src="./assets/images/arrow-down-line.png" alt="arrow donwline">
+            <div class="find-me-rightside">
+                <span>{{ 'ATF.SCROLL_DOWN' | translate }}</span>
+                <img src="./assets/images/arrow-down-line.png" alt="arrow down">
+            </div>
         </div>
     </div>
-</div>
 </div>

@@ -15,7 +15,9 @@ export class HeaderComponent {
   flagSrc: string = './assets/images/header/british-flag.png';
 
   constructor(private renderer: Renderer2, private translate: TranslateService) {
-    this.currentLang = this.translate.currentLang || 'en';
+    const storedLang = localStorage.getItem('selectedLanguage');
+    this.currentLang = storedLang ? storedLang : 'en';
+    this.translate.use(this.currentLang);
     this.updateFlag();
   }
 
@@ -31,6 +33,7 @@ export class HeaderComponent {
   switchLanguage() {
     this.currentLang = this.currentLang === 'en' ? 'de' : 'en';
     this.translate.use(this.currentLang);
+    localStorage.setItem('selectedLanguage', this.currentLang);
     this.updateFlag();
   }
 

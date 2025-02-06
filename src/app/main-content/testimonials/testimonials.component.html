@@ -5,11 +5,11 @@
             <img class="speech-mark" src="./assets/images/testimonials/speech-mark.png" alt="speech-mark image">
             <div class="border">
                 <span [class.fade-out]="isChanging"
-                    [class.fade-in]="!isChanging">{{testimonialsContent[currentIndex].text}}</span>
+                    [class.fade-in]="!isChanging">{{ testimonialsContent[currentIndex].text }}</span>
                 <div class="name-container">
                     <div class="sideline-inside"></div>
                     <span [class.fade-out]="isChanging"
-                        [class.fade-in]="!isChanging">{{testimonialsContent[currentIndex].name}}</span>
+                        [class.fade-in]="!isChanging">{{ testimonialsContent[currentIndex].name }}</span>
                 </div>
             </div>
             <div class="arrows-container">
@@ -17,9 +17,11 @@
                     <img class="arrow-left" src="./assets/images/testimonials/arrow_back.png"
                         (click)="prevTestimonial()" alt="Previous">
 
-                    <img *ngFor="let testimonial of testimonialsContent; let i = index" [src]="i === currentIndex 
-                       ? './assets/images/testimonials/green-dot.png' 
-                       : './assets/images/testimonials/purple-dot.png'" alt="Dot" (click)="setTestimonial(i)">
+                    <img *ngFor="let testimonial of testimonialsContent; let i = index" 
+                        [src]="i === currentIndex 
+                            ? './assets/images/testimonials/green-dot.png' 
+                            : './assets/images/testimonials/purple-dot.png'" 
+                        alt="Dot" (click)="setTestimonial(i)">
 
                     <img class="arrow-right" src="./assets/images/testimonials/arrow_forward.png"
                         (click)="nextTestimonial()" alt="Next">

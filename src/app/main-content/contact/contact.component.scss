@@ -175,6 +175,7 @@ button {
     white-space: nowrap;
     color: rgb(255, 255, 255);
     transition: box-shadow 0.3s ease;
+    margin-bottom: 8px;
 }
 
 .enabled-button {
@@ -299,7 +300,7 @@ button {
     }
 
     button {
-        width: 40%;
+        width: 50%;
     }
 
     .form-container {
@@ -319,7 +320,7 @@ button {
     }
 
     button {
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -412,6 +413,10 @@ button {
     .sideline-left {
         width: 10%;
     }
+
+    .checkbox-span {
+        white-space: normal;
+    }
 }
 
 @media (max-width: 520px) {
@@ -460,15 +465,11 @@ button {
     }
 
     button {
-        width: 60%;
+        font-size: 20px;
     }
 
     .arrow-container {
         bottom: 0;
-    }
-
-    .checkbox-span {
-        white-space: normal;
     }
 
     input[type="checkbox"] {
