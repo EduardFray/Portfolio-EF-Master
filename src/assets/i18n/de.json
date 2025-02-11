@@ -38,7 +38,12 @@
     },
     "PORTFOLIO": {
         "TITLE": "Portfolio",
-        "DESCRIPTION": "Entdecke eine Auswahl meiner Arbeiten – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+        "DESCRIPTION": "Entdecke eine Auswahl meiner Arbeiten – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "BUILD_SOMETHING": "Lass uns etwas Großartiges erschaffen!",
+        "UX_MATTERS": "Benutzererfahrung zählt",
+        "ALWAYS_LEARNING": "Immer am Lernen",
+        "TEAM_PLAYER": "Teamplayer",
+        "CODE_COFFEE": "Code & Kaffee ☕"
     },
     "PROJECTS": {
         "JOIN": {
@@ -126,5 +131,11 @@
         "RIGHTS_COMPLAINT": "Sie können jederzeit eine Beschwerde bei der Aufsichtsbehörde einreichen.",
         "CHANGES": "Änderungen unserer Datenschutzerklärung",
         "CHANGES_DESC": "Wir behalten uns das Recht vor, diese Datenschutzerklärung anzupassen."
+    },
+    "ABOVE_THE_FOLD": {
+        "PASSIONATE_DEV": "Leidenschaftlicher Frontend-Entwickler",
+        "BASED_IN": "Ansässig in Köln",
+        "CREATIVE_SOLUTION": "Kreativ & Lösungsorientiert",
+        "CLEAN_CODE": "Effizienter & Sauberer Code"
     }
 }

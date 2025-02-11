@@ -1,6 +1,10 @@
 .above-the-fold {
+    background: linear-gradient(179.69deg,
+            rgb(26, 39, 67) 15.75%,
+            rgb(39, 51, 75) 49.25%,
+            rgb(20, 29, 47) 67.18%);
     color: white;
-    height: 100vh;
+    height: 850px;
 }
 
 .d-none {
@@ -190,6 +194,36 @@
     @media (max-width: 1055px) {
         padding-left: 50px;
 
+    }
+}
+
+.animation {
+    width: 100%;
+    background-color: rgba(151, 71, 255, 0.2);
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    transform: skew(-10deg);
+    position: absolute;
+    top: 1000px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.animation .content {
+    display: flex;
+    gap: 100px;
+    animation: marquee 30s linear infinite;
+    width: max-content; /* Damit sich der gesamte Text in einer Reihe ausbreitet */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(-100%);
     }
 }
 

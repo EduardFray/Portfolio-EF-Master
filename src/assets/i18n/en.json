@@ -38,7 +38,12 @@
     },
     "PORTFOLIO": {
         "TITLE": "Portfolio",
-        "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+        "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "BUILD_SOMETHING": "Let's Build Something Great!",
+        "UX_MATTERS": "User Experience Matters",
+        "ALWAYS_LEARNING": "Always Learning",
+        "TEAM_PLAYER": "Team Player",
+        "CODE_COFFEE": "Code & Coffee ☕"
     },
     "PROJECTS": {
         "JOIN": {
@@ -130,5 +135,11 @@
         "RIGHTS_COMPLAINT": "You can always file a complaint with the supervisory authority.",
         "CHANGES": "Changes to Our Privacy Policy",
         "CHANGES_DESC": "We reserve the right to adapt this privacy policy to ensure it complies with current legal requirements or to implement changes to our services."
+    },
+    "ABOVE_THE_FOLD": {
+        "PASSIONATE_DEV": "Passionate Frontend Developer",
+        "BASED_IN": "Based in Cologne",
+        "CREATIVE_SOLUTION": "Creative & Solution-Oriented",
+        "CLEAN_CODE": "Efficient & Clean Code"
     }
 }

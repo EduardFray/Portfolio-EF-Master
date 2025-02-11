@@ -23,7 +23,8 @@
                         <img [src]="(i === skills.length - 1 && skill.hovered) ? './assets/images/skills/learning-white.png' : skill.img"
                             (mouseenter)="i === skills.length - 1 ? skill.hovered = true : null"
                             (mouseleave)="i === skills.length - 1 ? skill.hovered = false : null" alt="">
-                        <span class="skill-name" [ngClass]="{'last-skill': i === skills.length - 1}">{{ skill.name }}</span>
+                        <span class="skill-name" [ngClass]="{'last-skill': i === skills.length - 1}">{{ skill.name
+                            }}</span>
                         <div *ngIf="skill.hovered && i === skills.length - 1" class="popup-image">
                             <img src="./assets/images/skills/learning-popup.png" alt="Popup Image">
                         </div>
