@@ -62,35 +62,6 @@ h1 {
     z-index: 1;
 }
 
-.animation {
-    width: 100%;
-    background-color: rgba(151, 71, 255, 0.2);
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    position: relative;
-    top: 100px;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.animation .content {
-    display: flex;
-    gap: 100px;
-    animation: marquee 30s linear infinite;
-    width: max-content; 
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(100%);
-    }
-}
-
 //Media Quary//
 
 @media (max-width: 2700px) {

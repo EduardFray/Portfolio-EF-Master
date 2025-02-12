@@ -4,7 +4,7 @@
             rgb(39, 51, 75) 49.25%,
             rgb(20, 29, 47) 67.18%);
     color: white;
-    height: 850px;
+    height: 100vh;
 }
 
 .d-none {
@@ -17,11 +17,20 @@
     justify-content: center;
     align-items: center;
     clip-path: ellipse(100% 90% at 20% 10%);
+    height: 60%;
+    position: relative;
+}
+
+.image-position {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
 }
 
 .me-image-first {
     position: absolute;
-    top: 100px;
+    top: 16px;
     object-fit: cover;
     width: 588px;
     height: 662px;
@@ -108,7 +117,7 @@
 .find-me-links-container {
     position: relative;
     width: 1440px;
-    margin-top: 75px;
+    margin-top: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,37 +206,15 @@
     }
 }
 
-.animation {
-    width: 100%;
-    background-color: rgba(151, 71, 255, 0.2);
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    transform: skew(-10deg);
-    position: absolute;
-    top: 1000px;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.animation .content {
-    display: flex;
-    gap: 100px;
-    animation: marquee 30s linear infinite;
-    width: max-content; /* Damit sich der gesamte Text in einer Reihe ausbreitet */
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(100vw);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-}
 
 //Media Quary Section//
+
+@media (max-width: 2320px) {
+    .find-me-links-container {
+        margin-top: 100px;
+    }
+}
+
 
 @media (max-width: 1700px) {
     .image-name-elip-container {
@@ -389,11 +376,6 @@
         padding-top: 30px;
     }
 
-    .me-image-first {
-        width: 660px;
-        height: 420px;
-    }
-
     .d-none {
         display: flex !important;
     }
@@ -430,6 +412,8 @@
     .me-image-first {
         width: 590px;
         left: 200px;
+        height: 400px;
+        top: 205px;
     }
 
     .image-name-elip-container {
@@ -480,6 +464,7 @@
 
     .shadow-green-purple {
         width: 100%;
+        height: 480px;
 
         >img {
             left: 50px;
@@ -491,6 +476,7 @@
 
     .me-image-first {
         left: 75px;
+        top: 100px;
     }
 }
 
@@ -647,7 +633,7 @@
     }
 
     .image-name-elip-container {
-        clip-path: ellipse(100% 90% at 40% 12%);
+        clip-path: ellipse(100% 90% at 40% 10%);
     }
 }
 
@@ -659,6 +645,14 @@
     .healdine-description {
         font-size: 20px !important;
         white-space: nowrap;
+    }
+
+    .shadow-green-purple {
+        height: 380px;
+    }
+
+    .me-image-first {
+        height: 350px;
     }
 }
 
