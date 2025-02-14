@@ -1,7 +1,7 @@
 <div class="testimonials-container">
-    <img class="green-shadow" src="./assets/images/green-shadow-testo.png" alt="green shadow">
+    <img class="green-shadow" src="./assets/images/green-shadow-testo.png" alt="green shadow" data-aos="fade-up-right">
     <div class="testimonial-1440">
-        <div class="border-and-arrows">
+        <div class="border-and-arrows" data-aos="fade-up-left">
             <img class="speech-mark" src="./assets/images/testimonials/speech-mark.png" alt="speech-mark image">
             <div class="border">
                 <span [class.fade-out]="isChanging"
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="image-container">
+        <div class="image-container" data-aos="zoom-in">
             <img [src]="testimonialsContent[currentIndex].image" alt="Person Image">
             <div class="sideline-right"></div>
         </div>

@@ -1,12 +1,12 @@
 <div class="contact-container">
     <div class="headline-container">
         <div class="sideline-left"></div>
-        <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
+        <h1 data-aos="slide-right">{{ 'CONTACT.TITLE' | translate }}</h1>
     </div>
     <div class="contact-details-container">
         <div class="contact-1440">
             <div class="text-container">
-                <h2>{{ 'CONTACT.SUBTITLE' | translate }}</h2>
+                <h2 data-aos="fade-up">{{ 'CONTACT.SUBTITLE' | translate }}</h2>
                 <div class="text-spans">
                     <span>{{ 'CONTACT.DESCRIPTION_1' | translate }}</span>
                     <span>{{ 'CONTACT.DESCRIPTION_2' | translate }}</span>
@@ -15,23 +15,23 @@
             <div class="form-container">
                 <form (ngSubmit)="onSubmit(contactForm)" class="form-container" #contactForm="ngForm">
                     <!-- Name -->
-                    <input #name="ngModel" [(ngModel)]="contactData.name" pattern="[a-zA-ZäöüÄÖÜß\s]+" minlength="2"
+                    <input data-aos="slide-left" #name="ngModel" [(ngModel)]="contactData.name" pattern="[a-zA-ZäöüÄÖÜß\s]+" minlength="2"
                         name="name" type="text" class="purple-border" placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}" required [disabled]="isFormDisabled">
                     <span class="warn-message" *ngIf="name.invalid && name.touched">{{ 'CONTACT.ERROR_NAME' | translate }}</span>
                 
                     <!-- Email -->
-                    <input [(ngModel)]="contactData.email" #email="ngModel" name="email" type="email"
+                    <input data-aos="slide-left" [(ngModel)]="contactData.email" #email="ngModel" name="email" type="email"
                         class="purple-border" placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}" required
                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" [disabled]="isFormDisabled">
                     <span class="warn-message" *ngIf="email.invalid && email.touched">{{ 'CONTACT.ERROR_EMAIL' | translate }}</span>
                 
                     <!-- Message -->
-                    <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message"
+                    <textarea data-aos="slide-left" #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message"
                         class="purple-border" placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required [disabled]="isFormDisabled"></textarea>
                     <span class="warn-message" *ngIf="message.invalid && message.touched">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</span>
                 
                     <!-- Privacy Policy -->
-                    <div class="policy-container">
+                    <div data-aos="slide-left" class="policy-container">
                         <label>
                             <input type="checkbox" [(ngModel)]="contactData.policy" #policy="ngModel" name="policy" id="policy" [disabled]="isFormDisabled">
                             <span class="checkbox-span">
@@ -46,7 +46,7 @@
                     <span class="warn-message-policy" *ngIf="!contactData.policy && contactForm.submitted">{{ 'CONTACT.ERROR_POLICY' | translate }}</span>
                 
                     <!-- Submit Button -->
-                    <button [disabled]="!contactForm.valid || !contactData.policy || isFormDisabled"
+                    <button data-aos="flip-down" [disabled]="!contactForm.valid || !contactData.policy || isFormDisabled"
                         [ngClass]="{
                         'enabled-button': contactForm.valid && contactData.policy && !isFormDisabled,
                         'disabled-button': !contactForm.valid || !contactData.policy || isFormDisabled
