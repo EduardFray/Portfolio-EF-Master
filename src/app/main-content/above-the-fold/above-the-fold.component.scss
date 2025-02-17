@@ -30,10 +30,10 @@
 
 .me-image-first {
     position: absolute;
-    top: 16px;
+    top: 85px;
     object-fit: cover;
     width: 588px;
-    height: 662px;
+    height: 550px;
 }
 
 .shadow-green-purple {
@@ -334,7 +334,6 @@
 }
 
 @media (max-width: 1080px) {
-
     .healdine-description {
         font-size: 23px !important;
     }
@@ -345,8 +344,6 @@
 }
 
 @media (max-width: 1050px) {
-
-
     .iam-span {
         font-size: 22px !important;
     }
@@ -451,6 +448,49 @@
     }
 }
 
+@media (max-height: 830px) {
+    .image-position {
+        bottom: -45px;
+    }
+}
+
+@media (max-height: 750px) {
+    .me-image-first {
+        height: 445px;
+    }
+
+    .image-position {
+        bottom: -100px;
+    }
+}
+
+@media (max-height: 680px) {
+    .me-image-first {
+        object-fit: contain;
+        top: 115px;
+    }
+}
+
+@media (max-height: 580px) {
+    .me-image-first {
+        top: 150px;
+    }
+}
+
+@media (max-height: 530px) {
+    .me-image-first {
+        top: 210px;
+        height: 300px;
+    }
+}
+
+@media (max-height: 500px) {
+    .me-image-first {
+        top: 280px;
+        
+    }
+}
+
 
 @media (max-width: 750px) {
     .find-me-leftside {
@@ -496,7 +536,9 @@
     }
 
     .me-image-first {
-        height: 395px;
+        object-fit: contain;
+        height: 300px;
+        top: 190px;
         left: 40px;
     }
 
@@ -652,7 +694,7 @@
     }
 
     .me-image-first {
-        height: 350px;
+        top: 110px;
     }
 }
 
@@ -687,6 +729,10 @@
 @media (max-width: 370px) {
     .find-me-leftside {
         width: 220px;
+    }
+
+    .me-image-first {
+        top: 130px;
     }
 }
 
@@ -740,10 +786,5 @@
     .find-me-leftside {
         width: 200px;
         gap: 20px;
-    }
-
-    .me-image-first {
-        height: 360px;
-        top: 135px;
     }
 }
