@@ -1,10 +1,10 @@
 {
     "ABOUT": {
         "TITLE": "About me",
-        "INTRO": "Hi, I’m a German-speaking Frontend Developer based in Cologne. My passion lies in creating digital experiences that seamlessly blend aesthetics and usability. Whether it’s a sleek website or a complex application, I’m driven by the challenge of turning ideas into interactive and engaging solutions.",
-        "BULLET_1": "I pride myself on being adaptable—whether working remotely or on-site, I’m committed to delivering high-quality results. I’m also open to relocating to my employer’s city, ensuring a collaborative and productive work environment.",
+        "INTRO": "Hi, I’m a German-speaking frontend developer from Cologne. I build websites and applications that look good and are easy to use. My focus is on making digital solutions clear and functional. From small websites to larger applications – I turn ideas into working solutions that users can understand.",
+        "BULLET_1": "I can work flexibly, whether remotely or on-site. Delivering good work and collaborating effectively with the team is important to me. I value clear communication and a structured approach to ensure successful project execution.",
         "BULLET_2": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
-        "BULLET_3": "In my profession, programming isn't just about writing code, it's a creative form of problem-solving. I enjoy simplifying complex technical challenges and designing solutions that put users first. Each project is an opportunity to learn, improve, and contribute to something impactful."
+        "BULLET_3": "Programming is more than just writing code – it's about finding solutions to real problems. I simplify complex things and create user-friendly applications. Every project is a chance to learn and improve."
     },
     "NAV": {
         "ABOUT_ME": "About me",

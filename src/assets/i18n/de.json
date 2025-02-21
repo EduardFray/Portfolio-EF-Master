@@ -1,10 +1,10 @@
 {
     "ABOUT": {
         "TITLE": "Über mich",
-        "INTRO": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus Köln. Meine Leidenschaft liegt darin, digitale Erlebnisse zu schaffen, die Ästhetik und Benutzerfreundlichkeit nahtlos verbinden. Egal, ob es sich um eine elegante Website oder eine komplexe Anwendung handelt, ich liebe es, Ideen in interaktive und ansprechende Lösungen umzuwandeln.",
-        "BULLET_1": "Ich bin anpassungsfähig, ob remote oder vor Ort, ich bin bestrebt, qualitativ hochwertige Ergebnisse zu liefern. Ich bin auch bereit, in die Stadt meines Arbeitgebers zu ziehen, um eine produktive und kollaborative Arbeitsumgebung zu gewährleisten.",
+        "INTRO": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus Köln. Ich entwickle Websites und Anwendungen, die gut aussehen und einfach zu bedienen sind. Mir ist wichtig, dass digitale Lösungen klar und funktional sind. Von kleinen Webseiten bis hin zu größeren Anwendungen – ich setze Ideen technisch um und mache sie für Nutzer verständlich.",
+        "BULLET_1": "Ich kann flexibel arbeiten, egal ob remote oder vor Ort. Mir ist es wichtig, gute Arbeit abzuliefern und effektiv im Team zusammenzuarbeiten. Ich schätze eine klare Kommunikation und eine strukturierte Arbeitsweise, um Projekte erfolgreich umzusetzen.",
         "BULLET_2": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten ständig zu verbessern.",
-        "BULLET_3": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code, sondern um eine kreative Form der Problemlösung. Ich genieße es, komplexe technische Herausforderungen zu vereinfachen und Lösungen zu entwerfen, die den Benutzer in den Mittelpunkt stellen. Jedes Projekt ist eine Gelegenheit, zu lernen, sich zu verbessern und etwas Bedeutendes beizutragen."
+        "BULLET_3": "Programmieren ist für mich mehr als nur Code schreiben – es geht darum, Lösungen für echte Probleme zu finden. Ich mache komplexe Dinge verständlich und entwickle benutzerfreundliche Anwendungen. Jedes Projekt gibt mir die Möglichkeit, Neues zu lernen und mich weiterzuentwickeln."
     },
     "NAV": {
         "ABOUT_ME": "Über mich",
